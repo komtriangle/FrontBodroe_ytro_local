@@ -2,7 +2,7 @@
   "name": "sberapp-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://komtriangle.github.io/Bodroe_ytro_front/",
+  "homepage": " https://komtriangle.github.io/FrontBodroe_ytro_local/",
   "dependencies": {
     "@diez/prefabs": "^10.6.0",
     "@sberdevices/assistant-client": "^2.9.2",
