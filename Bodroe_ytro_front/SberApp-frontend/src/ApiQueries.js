@@ -64,7 +64,9 @@ async function getExircicesfromGroup(GroupId) {
 
 async function createProgressAchieve(UserId, date, Completed) {
   const { data: newProgress } = axios.post(`${API_URL}ProgressAchieve/`, {
-    UserId: UserId
+    UserId: UserId,
+    Date: date,
+    Completed: true,
   });
   return newProgress;
 }
