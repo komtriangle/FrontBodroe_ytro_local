@@ -45,7 +45,7 @@ const DocStyles = createGlobalStyle`
 `;
 
 const initializeAssistant = (getState /*: any*/) => {
-  if (process.env.NODE_ENV === "development") {
+  
     return createSmartappDebugger({
       token:
         "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTY5MjU1MzksImV4cCI6MTYxNzAxMTkzOSwidHlwZSI6IkJlYXJlciIsImp0aSI6ImVkZWQ3MTg2LWQ4ZmEtNDBkOS05NTc3LWJlY2U0NjMyYjBmYSIsInN1YiI6IjdkMTM4N2FhY2RiYjY0ZTMwNTE3ODQ3ZGVhNzgwMDNmMTA4NjE1YmNlZGIzNTlmYjhmNWJiMWVkOGI0OTU3ZmM1MzliZTkyNzAwNDI2Mjk4IiwiYXVkIjoiVlBTIn0.h7cBWZiN5HriB_E2aRqqcUKwuWjdGKypULoXqpw7stAVMUaw4mdd4bccUnmvbDmt8-EswgA2G4SxvVth2O5uvl0tJGxajCTiItj-3yAI7s2x7jfQ6QzDp_mcpRJpKLQWhoWrWpyVUGzULpNiNpz7A0yOOxwWqYZXIKBuP3fEZrADRl1AztvuH6H6bxNXyPEwxAuZiXiOckbJnKk5xthvalWCr6UZ2A2JM9MGlnze7ARENV4yS4mLOeTfAjfJEaPgqhgIeUwK4aKKdFF9CDEPzTnkpclNfJxmaE7Zsa4w7QLmwwUTuAbhq0yQvRWh4LOEtyOBxGPFwiIFky11HhHIQpY-yDZKFajsexosTmUEWsji_GMtrjkGZBAO7YGDa1d7Q_WhSw60u0odxdT7gq2Dj4YWmgABHLZ4meahWWcI4sj6xeUZa60EJkbRYz3xShY3Gq-Kz4PotJc5zSdOhb12SjyCP18B-eqlPvIhZ1rn02xMcD7w7sCMYLjdduO9GaNMTWQJqMWH7HwkYz3hKw-I0VBZV2fLmrZ5M2X0FOcFmp7cbzkSfmBs7TOrziD1x-OtdDQNUE5bdcMIg7FKPFQvpS3TSpm5WrDlZeV25RSWEASuCYkxVfz_BKH40w79lu1-o_2afVZQnREtYK48KX7oyQfipU4sddN24qyLPL-_C_o" ??
@@ -53,7 +53,7 @@ const initializeAssistant = (getState /*: any*/) => {
       initPhrase: `Запусти Бодрое утро`,
       getState,
     });
-  }
+  
   return createAssistant({ getState });
 };
 
