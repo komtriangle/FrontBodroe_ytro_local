@@ -76,6 +76,7 @@ const Workout = ({
       iterChanged != -1
     ) {
       const getUserAchieves = async () => {
+        alert("userId")
         alert(userId)
         await ApiQueries.createProgressAchieve(userId, new Date(), true);
       };
@@ -295,6 +296,7 @@ const Workout = ({
                             onClick={() => {
                               if (iter + 1 == workoutExercises.length) {
                                 const getUserAchieves = async () => {
+                                  alert("userId")
                                   alert(userId)
                                   await ApiQueries.createProgressAchieve(
                                     userId,
