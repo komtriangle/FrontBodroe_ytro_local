@@ -9,6 +9,7 @@ async function createSberId(SberId) {
 }
 
 async function createUser(UserId) {
+  //alert(UserId)
   const { data: newUser } = await axios.post(`${API_URL}User/?user_id=${UserId}`);
   // , {
   //   headers: {'Access-Control-Allow-Origin': '*'},

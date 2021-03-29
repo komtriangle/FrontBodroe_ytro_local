@@ -241,7 +241,7 @@ function App() {
               setAchieves(ach.data);
             };
             getUserAchieves();
-            ApiQueries.createUser(userId);
+           // ApiQueries.createUser(userId);
           } else if (event.user_id != undefined) {
             setUserId(event.user_id);
             ApiQueries.createUser(userId);
