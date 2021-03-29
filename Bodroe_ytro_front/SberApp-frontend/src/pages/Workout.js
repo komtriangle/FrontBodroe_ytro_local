@@ -117,8 +117,8 @@ const Workout = ({
 
           {workoutExercises ? (
             <MarkedList>
-              {workoutExercises.map(({ _id, name  }, i) => (
-                <MarkedItem text={name } style={{ color: primary }}>
+              {workoutExercises.map(({ _id, trainingName  }, i) => (
+                <MarkedItem text={trainingName } style={{ color: primary }}>
                   <IconDone size="xs" color={accent} />
                 </MarkedItem>
               ))}
@@ -194,8 +194,8 @@ const Workout = ({
 
                       {workoutExercises ? (
                         <MarkedList>
-                          {workoutExercises.map(({ _id, name }, i) => (
-                            <MarkedItem text={name} style={{ color: primary }}>
+                          {workoutExercises.map(({ _id, trainingName }, i) => (
+                            <MarkedItem text={trainingName} style={{ color: primary }}>
                               <IconDone size="xs" color={accent} />
                             </MarkedItem>
                           ))}
@@ -227,7 +227,7 @@ const Workout = ({
                       }}
                     >
                       <TextBoxBigTitle>
-                        {workoutExercises[iter].name}
+                        {workoutExercises[iter].trainingName}
                       </TextBoxBigTitle>
                       <div style={{ marginTop: "0.5rem" }}>
                         <Timer

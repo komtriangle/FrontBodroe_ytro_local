@@ -62,7 +62,7 @@ const Choose = ({
             style={{ paddingTop: "1rem", paddingBottom: "1.25rem" }}
           >
             {workouts.current.data.map(
-              ({ name, short_description, discription, image }, i) => (
+              ({ name, short_description, description, image }, i) => (
                 <CarouselCol key={`item:${i}`}>
                   <Card
                     style={{
@@ -113,7 +113,7 @@ const Choose = ({
                                 },
                               });
                               setGroupId(i + 1);
-                              setDescription(discription);
+                              setDescription(description);
                               setName(name);
                             }}
                           >
