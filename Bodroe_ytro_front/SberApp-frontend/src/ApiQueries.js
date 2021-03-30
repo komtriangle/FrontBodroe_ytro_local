@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://bodroe-ytro-2803.herokuapp.com/";
+const API_URL = "https://bodroe-ytro-3003.herokuapp.com/";
 async function createSberId(SberId) {
   const { data: newSberId } = await axios.post(`${API_URL}SberId/`, {
     SberId,
@@ -10,16 +10,16 @@ async function createSberId(SberId) {
 
 async function createUser(UserId) {
   //alert(UserId)
-  const { data: newUser } = await axios.post(`${API_URL}User/?user_id=${UserId}`);
-  // , {
-  //   headers: {'Access-Control-Allow-Origin': '*'},
-  //   UserId: UserId,
-  //   SberId: 0,
-  //   Name: "",
-  //   Age: 0,
-  //   Gender: "",
-  //   Active: 0,
-  // });
+  const { data: newUser } = await axios.post(`${API_URL}User/`
+  , {
+    headers: {'Access-Control-Allow-Origin': '*'},
+    UserId: UserId,
+    SberId: 0,
+    Name: "",
+    Age: 0,
+    Gender: "",
+    Active: 0,
+  });
   return newUser;
 }
 
@@ -65,12 +65,12 @@ async function getExircicesfromGroup(GroupId) {
 }
 
 async function createProgressAchieve(UserId, date, Completed) {
-  const { data: newProgress } = axios.post(`${API_URL}ProgressAchieve/?user_id=${UserId}`); 
-  // {
-  //   UserId: UserId,
-  //   Date: date,
-  //   Completed: true,
-  // });
+  const { data: newProgress } = axios.post(`${API_URL}ProgressAchieve/`, 
+  {
+    UserId: UserId,
+    Date: date,
+    Completed: true,
+  });
   return newProgress;
 }
 
